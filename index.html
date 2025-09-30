@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Triângulos - Enciclopédia Matemática</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>Triângulos</h1>
+            <p>Uma enciclopédia completa sobre triângulos, suas classificações, propriedades e fórmulas matemáticas.</p>
+        </div>
+    </header>
+
+    <nav>
+        <div class="container">
+            <ul>
+                <li><a href="#classificacao-lados">Classificação por Lados</a></li>
+                <li><a href="#classificacao-angulos">Classificação por Ângulos</a></li>
+                <li><a href="#formulas">Fórmulas</a></li>
+                <li><a href="#calculadora">Calculadora</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <main class="container">
+        <section id="classificacao-lados">
+            <h2>Classificação por Lados</h2>
+            <p>Os triângulos podem ser classificados de acordo com o comprimento de seus lados em três tipos principais:</p>
+            
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Triângulo Equilátero</h3>
+                    <div class="triangle-img">
+                        <svg width="200" height="173" viewBox="0 0 200 173">
+                            <polygon points="100,10 190,160 10,160" fill="#0f3460" stroke="#e94560" stroke-width="3"/>
+                            <text x="100" y="85" text-anchor="middle" fill="#f1f1f1">a</text>
+                            <text x="150" y="130" text-anchor="middle" fill="#f1f1f1">a</text>
+                            <text x="50" y="130" text-anchor="middle" fill="#f1f1f1">a</text>
+                        </svg>
+                    </div>
+                    <p>Todos os três lados têm o mesmo comprimento. Todos os ângulos internos medem 60°.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Triângulo Isósceles</h3>
+                    <div class="triangle-img">
+                        <svg width="200" height="173" viewBox="0 0 200 173">
+                            <polygon points="100,10 180,160 20,160" fill="#0f3460" stroke="#e94560" stroke-width="3"/>
+                            <text x="100" y="85" text-anchor="middle" fill="#f1f1f1">a</text>
+                            <text x="150" y="130" text-anchor="middle" fill="#f1f1f1">b</text>
+                            <text x="50" y="130" text-anchor="middle" fill="#f1f1f1">a</text>
+                        </svg>
+                    </div>
+                    <p>Dois lados têm o mesmo comprimento e dois ângulos são iguais.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Triângulo Escaleno</h3>
+                    <div class="triangle-img">
+                        <svg width="200" height="173" viewBox="0 0 200 173">
+                            <polygon points="80,20 180,150 30,150" fill="#0f3460" stroke="#e94560" stroke-width="3"/>
+                            <text x="100" y="85" text-anchor="middle" fill="#f1f1f1">a</text>
+                            <text x="150" y="120" text-anchor="middle" fill="#f1f1f1">b</text>
+                            <text x="50" y="140" text-anchor="middle" fill="#f1f1f1">c</text>
+                        </svg>
+                    </div>
+                    <p>Todos os três lados têm comprimentos diferentes. Todos os ângulos internos também são diferentes.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="classificacao-angulos">
+            <h2>Classificação por Ângulos</h2>
+            <p>Os triângulos também podem ser classificados de acordo com a medida de seus ângulos internos:</p>
+            
+            <div class="cards-container">
+                <div class="card">
+                    <h3>Triângulo Acutângulo</h3>
+                    <div class="triangle-img">
+                        <svg width="200" height="173" viewBox="0 0 200 173">
+                            <polygon points="60,30 160,140 30,140" fill="#0f3460" stroke="#e94560" stroke-width="3"/>
+                        </svg>
+                    </div>
+                    <p>Todos os três ângulos internos são agudos (menores que 90°).</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Triângulo Retângulo</h3>
+                    <div class="triangle-img">
+                        <svg width="200" height="173" viewBox="0 0 200 173">
+                            <polygon points="50,20 50,150 180,150" fill="#0f3460" stroke="#e94560" stroke-width="3"/>
+                            <path d="M45,145 L55,145 L55,155" fill="none" stroke="#e94560" stroke-width="2"/>
+                        </svg>
+                    </div>
+                    <p>Possui um ângulo reto (exatamente 90°). O lado oposto ao ângulo reto é chamado de hipotenusa.</p>
+                </div>
+                
+                <div class="card">
+                    <h3>Triângulo Obtusângulo</h3>
+                    <div class="triangle-img">
+                        <svg width="200" height="173" viewBox="0 0 200 173">
+                            <polygon points="120,20 180,150 30,120" fill="#0f3460" stroke="#e94560" stroke-width="3"/>
+                        </svg>
+                    </div>
+                    <p>Possui um ângulo obtuso (maior que 90°).</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="formulas">
+            <h2>Fórmulas Básicas</h2>
+            
+            <h3>Área do Triângulo</h3>
+            <div class="formula">
+                <p>Área = (base × altura) / 2</p>
+            </div>
+            <p>Onde a base é qualquer lado do triângulo e a altura é a distância perpendicular da base ao vértice oposto.</p>
+            
+            <h3>Perímetro do Triângulo</h3>
+            <div class="formula">
+                <p>Perímetro = lado₁ + lado₂ + lado₃</p>
+            </div>
+            <p>A soma de todos os lados do triângulo.</p>
+            
+            <h3>Teorema de Pitágoras (para triângulos retângulos)</h3>
+            <div class="formula">
+                <p>a² + b² = c²</p>
+            </div>
+            <p>Onde a e b são os catetos e c é a hipotenusa.</p>
+            
+            <h3>Lei dos Cossenos</h3>
+            <div class="formula">
+                <p>a² = b² + c² - 2bc·cos(A)</p>
+            </div>
+            <p>Onde a, b e c são os lados do triângulo e A é o ângulo oposto ao lado a.</p>
+            
+            <h3>Lei dos Senos</h3>
+            <div class="formula">
+                <p>a/sen(A) = b/sen(B) = c/sen(C) = 2R</p>
+            </div>
+            <p>Onde R é o raio do círculo circunscrito ao triângulo.</p>
+        </section>
+
+        <section id="calculadora">
+            <h2>Calculadora de Triângulos</h2>
+            <p>Use esta calculadora para encontrar propriedades de triângulos com base nos dados fornecidos.</p>
+            
+            <div class="calculator">
+                <h3>Calcular Área e Perímetro</h3>
+                <div class="input-group">
+                    <label for="base">Base (b):</label>
+                    <input type="number" id="base" placeholder="Digite a base">
+                </div>
+                
+                <div class="input-group">
+                    <label for="altura">Altura (h):</label>
+                    <input type="number" id="altura" placeholder="Digite a altura">
+                </div>
+                
+                <div class="input-group">
+                    <label for="lado2">Lado 2:</label>
+                    <input type="number" id="lado2" placeholder="Digite o segundo lado">
+                </div>
+                
+                <div class="input-group">
+                    <label for="lado3">Lado 3:</label>
+                    <input type="number" id="lado3" placeholder="Digite o terceiro lado">
+                </div>
+                
+                <button id="calcular">Calcular</button>
+                
+                <div class="result" id="resultado">
+                    <h4>Resultados:</h4>
+                    <p id="area-result"></p>
+                    <p id="perimetro-result"></p>
+                </div>
+            </div>
+            
+            <div class="calculator">
+                <h3>Verificar Tipo de Triângulo</h3>
+                <div class="input-group">
+                    <label for="ladoA">Lado A:</label>
+                    <input type="number" id="ladoA" placeholder="Digite o lado A">
+                </div>
+                
+                <div class="input-group">
+                    <label for="ladoB">Lado B:</label>
+                    <input type="number" id="ladoB" placeholder="Digite o lado B">
+                </div>
+                
+                <div class="input-group">
+                    <label for="ladoC">Lado C:</label>
+                    <input type="number" id="ladoC" placeholder="Digite o lado C">
+                </div>
+                
+                <button id="verificar">Verificar</button>
+                
+                <div class="result" id="tipo-result">
+                    <h4>Resultado:</h4>
+                    <p id="tipo-triangulo"></p>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="about">
+                    <h3>Sobre este Site</h3>
+                    <p>Este site educativo foi desenvolvido para auxiliar estudantes de matemática no estudo de triângulos, suas propriedades e fórmulas. Todo o conteúdo é baseado em princípios matemáticos fundamentais.</p>
+                </div>
+                
+                <div class="feedback-form">
+                    <h3>Envie seu Feedback</h3>
+                    <form id="feedbackForm">
+                        <textarea placeholder="Deixe seu comentário ou sugestão..."></textarea>
+                        <button type="submit">Enviar</button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="copyright">
+                <p>&copy; 2023 Enciclopédia Matemática - Todos os direitos reservados</p>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
+
